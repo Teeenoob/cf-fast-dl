@@ -1,5 +1,5 @@
 // temporary / not final
-
+// feel free to suggest stat changes and add more versions of items
 "items_game"
 {
 	"prefabs"
@@ -7,6 +7,105 @@
     }
     "items"
     {
+		"44110"
+		{
+			"name"		"The Tank-Buster V1"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_minigun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"                   "1"
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_name"	"The Tank-Buster V1"
+			"item_slot"	"primary"
+			"item_logname"	"tank_minigun"
+			"item_iconname"	"tank_minigun"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun.mdl"
+			"attach_to_hands"	"2"
+			"propername"	"1"
+			"item_quality"	"community"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+				"attach particle effect"	"2"
+			}
+			"visuals"
+			{
+				"sound_reload"	"Weapon_Gatling.Reload"
+				"sound_empty"	"Weapon_Gatling.ClipEmpty"
+				"sound_double_shot"	"Weapon_Gatling.Fire"
+				"sound_special1"	"Weapon_Gatling.WindUp"
+				"sound_special2"	"Weapon_Gatling.WindDown"
+				"sound_special3"	"Weapon_Gatling.Spin"
+				"sound_burst"	"Weapon_Gatling.FireCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.25"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value" "0.6"
+				}
+				"aiming movespeed increased"
+				{
+					"attribute_class"	"mult_player_aiming_movespeed"
+					"value" "1.15"
+				}
+				"aiming knockback resistance"
+				{
+					"attribute_class"		"mult_aiming_knockback_resistance"
+					"value"					"0"
+				}
+				"dmg penalty vs buildings"
+				{
+					"attribute_class"		"mult_dmg_vs_buildings"
+					"value"	"0.5"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"0.5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value" "1"
+				}
+				"increase player capture value"
+				{
+					"attribute_class"	"add_player_capturevalue"
+					"value" "1"
+				}
+			}
+		}
 		"44111"
 		{
 			"name"		"The Tank-Buster"
@@ -35,12 +134,12 @@
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/workshop/weapons/c_models/c_tank_minigun/c_tank_minigun_gun.mdl"
+			"model_player"	"models/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun.mdl"
 			"attach_to_hands"	"2"
 			"propername"	"1"
-			"item_quality"	"selfmade"
-			"min_ilevel"	"5"
-			"max_ilevel"	"5"
+			"item_quality"	"community"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
 			"used_by_classes"
 			{
 				"heavy"	"1"
@@ -48,6 +147,7 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -9"
+				"attach particle effect"	"2"
 			}
 			"visuals"
 			{
@@ -107,6 +207,5 @@
 		}
 	}
 }
-
 
 
