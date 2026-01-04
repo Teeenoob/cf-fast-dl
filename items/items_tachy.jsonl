@@ -124,7 +124,7 @@
 				"can_deal_long_distance_damage"	"1"
 			}
 			"show_in_armory"	"1"
-			"moditem"                   "0"
+			"moditem"                   "1"
 			"item_type_name"	"#TF_Weapon_Minigun"
 			"item_name"	"The Tank-Buster"
 			"item_slot"	"primary"
