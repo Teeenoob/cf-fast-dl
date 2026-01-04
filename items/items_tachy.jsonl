@@ -7,6 +7,23 @@
     }
     "items"
     {
+		"weapon_smg"
+		{
+			"item_quality"	"developer"
+			"used_by_classes"
+			{
+				"engineer"	"secondary"
+				"sniper"	"secondary"
+			}
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value"	"1"
+				}
+			}
+		}
 		"44110"
 		{
 			"name"		"The Tank-Buster V1"
