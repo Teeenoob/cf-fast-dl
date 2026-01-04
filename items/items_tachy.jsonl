@@ -124,7 +124,7 @@
 				"can_deal_long_distance_damage"	"1"
 			}
 			"show_in_armory"	"1"
-			"moditem"                   "1"
+			"moditem"                   "0"
 			"item_type_name"	"#TF_Weapon_Minigun"
 			"item_name"	"The Tank-Buster"
 			"item_slot"	"primary"
@@ -202,6 +202,667 @@
 					"value" "1"
 				}
 			}
+		}
+		"44112"
+		{
+			"name"		"The Midas Gun"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_smg"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SMG"
+			"inspect_panel_dist" "39"
+			"show_in_armory"	"1"
+			"moditem"                   "1"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_name"	"The Midas Gun"
+			"item_slot"	"secondary"
+			"item_quality"		"developer"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_smg/c_smg_gold"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.505"
+				"min_viewmodel_offset"					"10 0 -7"
+			}
+			"xifier_class_remap"	"weapon_smg"
+			"particle_suffix"		"smg"
+		}
+		"44113"
+		{
+			"name"	"Collector's Golden Wrench"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_wrench"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_destroy_sappers"		"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"                   "1"
+			"item_type_name"	"#TF_Weapon_Wrench"
+			"item_name"	"Collector's Golden Wrench"
+			"item_slot"	"melee"
+			"item_quality"	"collectors"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"propername"	"1"
+			"attach_to_hands"	"1"
+			"item_logname"	"wrench_golden"
+			"item_iconname"	"wrench_golden"
+			"image_inventory"	"backpack/weapons/c_models/c_wrench/gold_wrench"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_wrench/c_wrench.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"visuals"
+			{
+				"material_override"	"models/weapons/c_items/gold_wrench.vmt"
+			}
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 -2 -9"
+			}
+			"mouse_pressed_sound"	"ui/item_medal_pickup.wav"
+			"drop_sound"		"ui/item_medal_pickup.wav"
+			"xifier_class_remap"	"wrench"
+		}
+		"44114"
+		{
+			"name"			"The Razorshield"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"		"tf_wearable_razorback"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"		"1"
+			"item_type_name" 	"#TF_Wearable_Shield"
+			"item_name"		"The Razorshield"
+			"item_description"	"Too tired of spies?"
+			"item_slot"		"secondary"
+			"equip_region"	"back"
+			"anim_slot"	"FORCE_NOT_USED"
+			"item_quality"		"collectors"
+			"propername"	"1"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"image_inventory"	"backpack/player/items/sniper/knife_shield"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/sniper/knife_shield.mdl"
+			"extra_wearable" "models/player/items/sniper/knife_shield.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"secondary"
+			}
+			"static_attrs"
+			{
+				"item_meter_charge_type"						"1"
+				"item_meter_charge_rate"			"30"
+				"meter_label"							"#TF_Unique_Backstab_Shield"
+			}
+			"attributes"
+			{
+				"backstab shield"
+				{
+					"attribute_class"	"set_blockbackstab_once"
+					"value" "1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"5"									
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+		}
+		"44115"
+		{
+			"name"	"The Repairer"
+			"first_sale_date"	"2012/12/19"
+			"item_class"	"tf_weapon_medigun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"		"1"
+			"item_type_name"	"#TF_Weapon_Medigun_Resist"
+			"item_name"		"Repairer"
+			"item_description"	"We didn't get it as a building but we got it as a weapon!"
+			"propername"		"1"
+			"item_slot"		"secondary"
+			"equip_region"	"medigun_backpack"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense.mdl"
+			"extra_wearable" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"rarity4"
+			"min_ilevel"	"8"
+			"max_ilevel"	"8"
+			"used_by_classes"
+			{
+				"engineer"	"secondary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"3"
+				}
+				"ubercharge rate bonus"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"	"1.45"
+				}
+				"ubercharge overheal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_overheal_uberchargerate"
+					"value"	"0.67"
+				}
+				"overheal fill rate reduced"
+				{
+					"attribute_class"	"overheal_fill_rate"
+					"value" "0.34"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value"				"1"								
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 			"2"								
+				}
+				"medigun charge is resists"
+				{
+					"attribute_class"	"set_charge_type"
+					"value"	"3"
+				}
+				"medigun bullet resist passive"
+				{
+					"attribute_class"	"medigun_bullet_resist_passive"
+					"value" "0.1"
+				}
+				"medigun bullet resist deployed"
+				{
+					"attribute_class"	"medigun_bullet_resist_deployed"
+					"value" "0.75"
+				}
+				"medigun blast resist passive"
+				{
+					"attribute_class"	"medigun_blast_resist_passive"
+					"value" "0.1"
+				}
+				"medigun blast resist deployed"
+				{
+					"attribute_class"	"medigun_blast_resist_deployed"
+					"value" "0.75"
+				}
+				"medigun fire resist passive"
+				{
+					"attribute_class"	"medigun_fire_resist_passive"
+					"value" "0.1"
+				}
+				"medigun fire resist deployed"
+				{
+					"attribute_class"	"medigun_fire_resist_deployed"
+					"value" "0.75"
+				}
+				"medigun heals buildings"
+				{
+					"attribute_class"	"medic_machinery_beam"
+					"value" "0.75"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense_festivizer.mdl"
+					}
+				}
+			}
+			"visuals_red"
+			{
+				"skin" "0"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense_festivizer.mdl"
+					}
+				}
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense_festivizer.mdl"
+					}
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"44116"
+		{
+			"name"	"The Diamondfuck"
+			"first_sale_date"	"2011/08/11"
+			"item_class"	"tf_weapon_revolver"
+			"craft_material_type"	"weapon"
+			"craft_class"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"		"1"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name"	"The diamondfuck"
+			"item_description"	"You're about to have a real bad day!"
+			"item_slot"	"secondary"
+			"item_quality"	"rarity3"
+			"propername"	"1"
+			"item_logname"	"diamondback"
+			"item_iconname"	"diamondback"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"32"
+			"model_player"	"models/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"engineer"	"secondary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+			"attributes"
+			{
+				"mod sentry killed revenge"
+				{
+					"attribute_class"	"sentry_killed_revenge"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Diamond_Back.Single"
+				"sound_burst"	"Weapon_Diamond_Back.SingleCrit"
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver_festivizer.mdl"
+					}
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+ 		"44117"
+		{
+			"name"		"Buff Banner"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_buff_item"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_apply_soldier_buff"	"1"
+			}
+			"base_item_name"	"The Buff Banner"
+			"show_in_armory"	"1"
+			"moditem"		"1"
+			"item_type_name"	"#TF_Weapon_Battle_Banner"
+			"item_name"	"#TF_Unique_Achievement_SoldierBuff"
+			"item_description"	"#TF_Unique_Achievement_SoldierBuff_Desc"
+			"item_slot"	"secondary"
+			"equip_region"	"back"
+			"anim_slot"	"melee"
+			"item_quality"	"rarity4"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/c_models/c_buffpack/c_buffpack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"35"
+			"model_player"	"models/weapons/c_models/c_bugle/c_bugle.mdl"
+			"attach_to_hands" "1"
+			"extra_wearable" "models/weapons/c_models/c_buffpack/c_buffpack.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -2 -5"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"51" 
+				}
+				"mod soldier buff type"
+				{
+					"attribute_class"	"set_buff_type"
+					"value"	"1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_MELEE_SECONDARY"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_MELEE_SECONDARY"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+		"44118"
+		{
+			"name"		"Battalion's Backup"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_buff_item"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_apply_soldier_buff"	"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"		"1"
+			"item_type_name"	"#TF_Weapon_Battle_Banner"
+			"item_name"	"#TF_TheBattalionsBackup"
+			"item_description"	"#TF_TheBattalionsBackup_Desc"
+			"item_slot"	"secondary"
+			"equip_region"	"back"
+			"anim_slot"	"melee"
+			"item_quality"	"rarity4"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_battalion_buffpack/c_battalion_buffpack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"35"
+			"model_player"	"models/workshop/weapons/c_models/c_battalion_bugle/c_battalion_bugle.mdl"
+			"attach_to_hands" "1"
+			"extra_wearable" "models/workshop/weapons/c_models/c_battalion_buffpack/c_battalion_buffpack.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"secondary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -2 -5"
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"51" 
+				}
+				"mod soldier buff type"
+				{
+					"attribute_class"	"set_buff_type"
+					"value"	"2"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "20"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_MELEE_SECONDARY"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_MELEE_SECONDARY"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+		}
+		"44119"
+		{
+			"name"		"Concheror"
+			"first_sale_date"	"2011/03/08"
+			"item_class"	"tf_weapon_buff_item"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_apply_soldier_buff"	"1"
+			}
+			"show_in_armory"	"1"
+			"moditem"		"1"
+			"item_type_name"	"#TF_Weapon_SoldierSashimono"
+			"item_name"	"#TF_SoldierSashimono"
+			"item_description"	"#TF_SoldierSashimono_Desc"
+			"item_slot"	"secondary"
+			"equip_region"	"back"
+			"anim_slot"	"melee"
+			"item_quality"	"rarity4"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_shogun_warpack/c_shogun_warpack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"35"
+			"model_player"	"models/workshop_partner/weapons/c_models/c_shogun_warhorn/c_shogun_warhorn.mdl"
+			"attach_to_hands" "1"
+			"extra_wearable" "models/workshop_partner/weapons/c_models/c_shogun_warpack/c_shogun_warpack.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"secondary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -5 -2"
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_ITEM1_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
+					"ACT_ITEM1_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
+					"ACT_ITEM1_VM_PRIMARYATTACK"	"ACT_ITEM2_VM_PRIMARYATTACK"
+					"ACT_ITEM1_VM_SECONDARYATTACK"	"ACT_ITEM2_VM_SECONDARYATTACK"
+					"ACT_MP_ATTACK_STAND_MELEE_SECONDARY"	"ACT_MP_ATTACK_STAND_ITEM2_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_MELEE_SECONDARY"	"ACT_MP_ATTACK_STAND_ITEM2_SECONDARY"
+					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM2_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM2_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM2_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"51" 
+				}
+				"mod soldier buff type"
+				{
+					"attribute_class"	"set_buff_type"
+					"value"	"3"
+				}
+				"health regen"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"	"4"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
 		}
 	}
 }
